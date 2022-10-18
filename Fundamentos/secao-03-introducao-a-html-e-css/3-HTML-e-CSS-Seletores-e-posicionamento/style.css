@@ -25,8 +25,13 @@ body {
 
 #foto {
     float: left;
+    height: 300px;
 }
 
 .imagem{
     height: 300px;
+}
+
+.meuNome{
+    text-align: center;
 }
