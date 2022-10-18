@@ -5,6 +5,7 @@ h1 {
 
 body {
     background-color: lightblue;
+    padding: 3%;
 } 
 
 .meuNome .descricao {
@@ -23,6 +24,10 @@ body {
     font-size: 16px;
 }
 
+.ded {
+    font-size: 14px;
+}
+
 #foto {
     float: left;
     height: 280px;
@@ -32,8 +37,36 @@ body {
 
 .imagem{
     height: 300px;
+    position: relative;
 }
 
 .meuNome{
     text-align: center;
+}
+
+.descricao {
+    position: relative;
+    top: 10 px;
+    left: 10px;
+    font-size: 40px;
+}
+
+.rodape{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about {
+    margin: 20px 20px 20px;
+}
+
+.header {
+    background-color: white;
+    font-size: 20px;
+    
+}
+
+ul li:nth-child(odd) {
+    background-color: white;
 }
