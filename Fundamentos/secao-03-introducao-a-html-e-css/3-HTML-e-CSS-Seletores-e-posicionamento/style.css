@@ -22,3 +22,11 @@ body {
 .res {
     font-size: 16px;
 }
+
+#foto {
+    float: left;
+}
+
+.imagem{
+    height: 300px;
+}
