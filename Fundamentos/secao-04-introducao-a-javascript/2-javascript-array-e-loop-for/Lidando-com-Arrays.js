@@ -1,6 +1,6 @@
 // Iremos utilizar esse array para realizar os próximos exercícios.
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
@@ -64,3 +64,15 @@ if (numeroImpar === 0) {
 } else {
     console.log(numeroImpar, 'numeros impares.');
 }
+
+// Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let menorNumero = numbers[0];
+
+for (let index = 0 ; index < numbers.length; index += 1) {
+    if (numbers[index] < menorNumero) {
+        menorNumero = numbers[index];
+    }
+}
+
+console.log('o menor numero é: ' + menorNumero);
