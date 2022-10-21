@@ -48,3 +48,19 @@ for (let index = 0 ; index < numbers.length; index += 1) {
 }
 
 console.log('o maior numero é: ' + maiorNumero);
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+
+let numeroImpar = 0;
+
+for (let index = 0 ; index < numbers.length; index += 1) {
+    if ((numbers[index] % 2) != 0) {
+        numeroImpar += 1;
+    } 
+}
+
+if (numeroImpar === 0) {
+    console.log('nunhum valor impar encontrado');
+} else {
+    console.log(numeroImpar, 'numeros impares.');
+}
