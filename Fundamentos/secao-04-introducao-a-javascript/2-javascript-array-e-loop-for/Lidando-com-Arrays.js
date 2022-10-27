@@ -4,7 +4,7 @@
 
 // Percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
-for (let index = 0 ; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
     console.log(numbers[index]);
 }
 
@@ -13,8 +13,8 @@ for (let index = 0 ; index < numbers.length; index += 1) {
 let soma = 0;
 let espaco = " ";
 
-for (let index = 0 ; index < numbers.length; index += 1) {
-   soma += numbers[index];
+for (let index = 0; index < numbers.length; index += 1) {
+    soma += numbers[index];
 }
 
 // console.log('a soma dos valores é: ' + soma);
@@ -23,7 +23,7 @@ for (let index = 0 ; index < numbers.length; index += 1) {
 
 let media = 0;
 
-for (let index = 0 ; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
     media += numbers[index] / numbers.length;
 }
 
@@ -33,7 +33,7 @@ console.log('a media dos valores é: ' + media)
 
 if (media > 20) {
     console.log('valor maior que 20')
-}else {
+} else {
     console.log('valor menor ou igual a 20')
 }
 
@@ -41,7 +41,7 @@ if (media > 20) {
 
 let maiorNumero = numbers[0];
 
-for (let index = 0 ; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] > maiorNumero) {
         maiorNumero = numbers[index];
     }
@@ -53,10 +53,10 @@ console.log('o maior numero é: ' + maiorNumero);
 
 let numeroImpar = 0;
 
-for (let index = 0 ; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
     if ((numbers[index] % 2) != 0) {
         numeroImpar += 1;
-    } 
+    }
 }
 
 if (numeroImpar === 0) {
@@ -69,10 +69,40 @@ if (numeroImpar === 0) {
 
 let menorNumero = numbers[0];
 
-for (let index = 0 ; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] < menorNumero) {
         menorNumero = numbers[index];
     }
 }
 
 console.log('o menor numero é: ' + menorNumero);
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+
+
+let numerosImpares = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+
+    if (numbers[index] % 2 !== 0) {
+        numerosImpares += 1;
+    }
+}
+
+if (numerosImpares === 0) {
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log(numerosImpares);
+}
+
+// Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+let array = [];
+
+for (let index = 1; index <= 25; index += 1) {
+    array.push(index)
+    }
+console.log(array)
+
+for (let index = 0; index < array.length; index +=1){
+    console.log(array[index] / 2);
+}
