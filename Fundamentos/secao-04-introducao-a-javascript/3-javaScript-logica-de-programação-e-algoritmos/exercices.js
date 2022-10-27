@@ -50,3 +50,5 @@ for (let index = 0; index < array.length; index += 1) {
 
 console.log(maiorPalavra);
 console.log(menorPalavra);
+
+a
