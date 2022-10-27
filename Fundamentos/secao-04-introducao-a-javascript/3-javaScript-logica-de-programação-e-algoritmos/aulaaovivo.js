@@ -40,5 +40,3 @@ if(Carolzita < Murilo && Carolzita < Baêta) {
 } else {
     console.log('Todos tem a mesma idade!')
 }
-
-a
