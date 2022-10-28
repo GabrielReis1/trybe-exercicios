@@ -65,6 +65,12 @@
         titulo.innerHTML = 'Exercício - JavaScripit';
       }
       corrijeTexto()
+
+      function modificaTexto() {
+        let textoPadrao = document.getElementsByTagName('p')[0];
+        textoPadrao.innerHTML = textoPadrao.innerHTML.toUpperCase();
+      }
+      modificaTexto()      
         /*
       Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
       - document.getElementById()
